@@ -15,6 +15,10 @@ def get_user_info(username):
     query = f"SELECT * FROM users WHERE username = '{username}'"  # Vulnerable
     cursor.execute(query)
     return cursor.fetchall()
+# this is a comment
+
+
+
 
 # ------------------ Unsafe Deserialization ------------------
 def load_profile(pickled_data):
